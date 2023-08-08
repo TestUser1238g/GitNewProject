@@ -1,0 +1,5 @@
+applicationPageObjects\AccountsPage.class
+com\qa\util\ConfigReader.class
+applicationPageObjects\LoginPage.class
+driverFactory\DriverFactory.class
+driverFactory\TestJavaP.class

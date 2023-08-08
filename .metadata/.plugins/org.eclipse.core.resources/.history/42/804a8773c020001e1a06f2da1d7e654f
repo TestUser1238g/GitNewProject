@@ -1,0 +1,27 @@
+package driverFactory;
+
+import java.util.ArrayList;
+
+public class TestJavaP {
+public static void main(String args[]) {
+	
+	String[] strings = { "baseball", "a,b,bas,ball,base,cat,zzzz" };
+
+    String[] words = strings[1].split(",");
+
+    String longestConcatenation = "";
+
+    for (String word : words) {
+        if (strings[0].contains(word)) {
+            String remaining = strings[0].replace(word, "");
+            if (strings[0].contains(remaining)) {
+                if (word.length() + remaining.length() > longestConcatenation.length()) {
+                    longestConcatenation = word +","+ remaining;
+                }
+            }
+        }
+    }
+
+    System.out.println("Longest concatenation: " + longestConcatenation);
+}
+}

@@ -1,0 +1,39 @@
+package driverFactory;
+
+import java.util.ArrayList;
+
+public class TestJavaP {
+	
+public static void main(String args[]) {
+	
+	int k=0;
+	String[] strings = { "sandyaswaraj", "a,b,bas,ball,base,cat,swarajd,sandyad,zzzz" };
+
+    String[] words = strings[1].split(",");
+
+    String longestConcatenation = "";
+    
+    for (String word1 : words) {
+        for (String word2 : words) {
+        	int count=0;
+            if (strings[0].equals(word1 + word2)) {
+                String concatenation = word1 + "," + word2;
+                
+                if (concatenation.length() > longestConcatenation.length()) {
+                	k=count++;
+                	longestConcatenation = concatenation;
+                }
+                
+            }
+            
+        }
+    }
+    if(k==0)
+    System.out.println("Longest concatenation: " + longestConcatenation);
+    else {
+    	longestConcatenation="String is not possible to split";
+    	System.out.println(longestConcatenation);
+    }
+    	
+}
+}

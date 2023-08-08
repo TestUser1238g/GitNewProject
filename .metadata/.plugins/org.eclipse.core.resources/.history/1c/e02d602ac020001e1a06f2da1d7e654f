@@ -1,0 +1,22 @@
+package driverFactory;
+
+import java.util.ArrayList;
+
+public class TestJavaP {
+public static void main(String args[]) {
+	
+	String str[]= {"baseball","a,b,bas,ball,base,cat,zzzz"};
+
+    String str1[]=str[1].split(",");
+    String str2=str[0];
+	for(int i=0;i<str1.length;i++) {
+		if(str[0].contains(str1[i])) {
+			String remaining = str[0].replace(str1[i], "");
+			
+		}
+	}
+	System.out.println(remaining);
+	
+	
+}
+}

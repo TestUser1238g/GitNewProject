@@ -1,0 +1,11 @@
+package applicationPageObjects;
+
+import org.openqa.selenium.WebDriver;
+
+public class AccountsPage {
+
+	public AccountsPage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,5 @@
+package applicationPageObjects;
+
+public class AccountsPage {
+
+}

@@ -1,0 +1,29 @@
+package driverFactory;
+
+import java.util.ArrayList;
+
+public class TestJavaP {
+public static void main(String args[]) {
+	
+	String str[]= {"baseball","a,b,bas,ball,base,cat,zzzz"};
+	ArrayList<String> arr=new ArrayList<String>();
+	ArrayList<String> arr1=new ArrayList<String>();
+    String str1[]=str[1].split(",");
+    String str2=str[0];
+	for(int i=0;i<str1.length;i++) {
+		if(!arr.contains(str1[i])) {
+			arr.add(str1[i]);
+		}
+	}
+	int max=0;
+	for(int i=0;i<arr.size();i++) {
+		//System.out.println(arr.get(i));
+		if(str2.startsWith(arr.get(i))) {
+			arr1.add(arr.get(i));
+		}
+		if(max<arr1.size()) {
+			max=arr1.size();
+		}
+	}
+}
+}

@@ -1,0 +1,9 @@
+Feature: Application Login Test
+
+
+Scenario: User performs Login and Logout
+Given User land on Login page
+When User provides user name as "jagan"
+And User provides pwd as "jagan" 
+And User clicks on Login Button
+Then User lands on Home page

@@ -1,0 +1,40 @@
+package automationStepDefinations;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginStepDefinations {
+	
+	
+	@Given("User land on Login page")
+	public void user_land_on_login_page() {
+		System.out.println("Login page");
+
+	}
+
+	@When("User provides user name as {string}")
+	public void user_provides_user_name_as(String username) {
+		System.out.println(username);
+	 
+	}
+
+	@When("User provides pwd as {string}")
+	public void user_provides_pwd_as(String pwd) {
+		System.out.println(pwd);
+
+	}
+
+	@When("User clicks on Login Button")
+	public void user_clicks_on_login_button() {
+		System.out.println("Clicked on Login Button");
+
+	}
+
+	@Then("User lands on Home page")
+	public void user_lands_on_home_page() {
+		System.out.println("Landded on home page");
+	}
+
+
+}

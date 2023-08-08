@@ -1,0 +1,13 @@
+package TestAutomation.TestingFramework;
+
+import org.testng.annotations.Test;
+
+public class MobileTest {
+	
+	@Test
+	public void getMethodvalue() {
+		System.out.println("Mobile Test");
+	}
+
+
+}

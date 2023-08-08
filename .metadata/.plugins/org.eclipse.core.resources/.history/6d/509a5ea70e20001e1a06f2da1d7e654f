@@ -1,0 +1,25 @@
+package appHooks;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+import com.qa.util.ConfigReader;
+
+import driverFactory.DriverFactory;
+import io.cucumber.java.Before;
+
+public class ApplicationHooks {
+	private DriverFactory driverFactory;
+	private WebDriver driver;
+	private ConfigReader confiReader;
+	Properties prop;
+	
+	@Before(order=0)
+	public void getProperty() throws IOException {
+		prop=confiReader.init_prop();
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package TestAutomation.TestingFramework;
+
+import org.testng.annotations.Test;
+
+public class SeleniumTest {
+	
+	@Test
+	public void getMethodname() {
+		System.out.println("SeleniumTest");
+	}
+
+}
